@@ -15,7 +15,9 @@ def hello_world():
 def hello_world():
     return "This secret message should only be shown to authorized people"
 
-
+@route('/login')
+def get_login():
+    return "OK - looks like you've logged in"
 
 if'PYTHONANYWHERE_DOMAIN' in os.environ:
     application = default_app()
