@@ -7,12 +7,12 @@ def hello_world():
     return "Hello from Bottle!"
 
 @route('/public')
-def hello_world():
+def get_public():
     return "This public message should be shown to everyone!"
 
 
 @route('/secret')
-def hello_world():
+def get_secret():
     return "This secret message should only be shown to authorized people"
 
 @route('/login')
